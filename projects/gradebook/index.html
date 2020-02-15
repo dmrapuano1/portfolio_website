@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grade Book</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Grade book for %Insert Your Name Here%</h1>
+        <form>
+            <h2>Grades</h2>
+            <label for="subject">Subject:</label>
+            <input id="subject" type="text" name="subject">
+        
+            <label for="assignment">Assignment:</label>
+            <input id="assignment" type="text" name="assignment">
+        
+            <label for="score">Score:</label>
+            <input id="score" type="text" name="score">
+            
+            <label for="late" style="width: 150px; margin-bottom: 5px">Turned in:</label>          <!--Start of 'on time' added feature-->
+            <select id="late" style="width: 150px; margin-bottom: 5px">
+                <option value="onTime" selected="selected">On Time</option>
+                <option value="late">Late</option>
+            </select>                                                                              <!-- End of 'on time' feature-->
+            
+            <input type="submit" value="Submit" id="submit" onclick="return addRow()">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Assignment</th>
+                    <th>Score</th>
+                    <th style="text-align: center; padding: .5rem 0;">Late?</th>
+                    <th></th>                                                                      <!--Just making the delete button look good when added-->
+                </tr>
+            </thead>
+            <tbody id='container'>
+            </tbody>
+        </table>
+        <h3 id="average" style="display: none;">GPA: <span id="gpa">%Average%</span></h3>    
+    </body>
+</html>
