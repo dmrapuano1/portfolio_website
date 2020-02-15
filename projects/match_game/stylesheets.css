@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+  }
+  
+  body {
+    margin: 5px;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 2rem 0 0 5%;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h3 {
+      text-align: center;
+  }
+
+  .card {
+      border: 1px black solid;
+      display: inline-block;
+      width: 100px;
+      height: 75px;
+  }
+
+  .cardRow {
+      margin: 10px;
+  }
+
+  .key {
+      font-weight: bold;
+      text-align: center;
+      margin: 10px;
+  }
+  
+  .word {
+      text-align: center;
+      display: none;
+  }
