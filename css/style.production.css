@@ -194,6 +194,11 @@ form textarea {
     margin-bottom: 5px;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
 @-webkit-keyframes color-change {
     0% {
         fill: yellow;
