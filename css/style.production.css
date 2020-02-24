@@ -290,6 +290,12 @@ form textarea {
     animation: 30s cloud-move-reverse infinite alternate linear;
 }
 
+.about_p {
+    border-radius: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
 @media all and (max-width: 363px) {
     .page-header__item:first-child {
         display: none;
