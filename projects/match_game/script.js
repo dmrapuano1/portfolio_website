@@ -13,8 +13,10 @@ function resetValues(){ //Coding to restart the values in resetGame
     tryCount = 0  
 }; 
 function lostScript(){ //Script to close the game if player reaches maximum attempts
-    alert('No match. Game Over');
-    resetGame()
+    setTimeout (function() {
+        alert('No match. Game Over');
+        resetGame();
+    }, 100);
 }; 
 function winScript(){ //Script to alert win and reset the game
     setTimeout(function() {
